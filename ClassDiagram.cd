@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="MESerial" Collapsed="true">
+    <Position X="11.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAUCgQAAAAUEAACAAIAAAIAgIAARkIQACCAAIBCA=</HashCode>
+      <FileName>D:\OneDrive - Max-Eyth-Schule\Unterricht\C++ BG\01_Projektmappen\Muster\Zentralabitur\dieMusterklassen\MESerial.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Artikel">
+    <Position X="9" Y="2.5" Width="3.25" />
+    <AssociationLine Name="seg" Type="Segment" FixedFromPoint="true">
+      <Path>
+        <Point X="12.25" Y="4.125" />
+        <Point X="15.5" Y="4.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIQAEQAgAAAgAAAAAAAAEBAAAAA=</HashCode>
+      <FileName>Artikel.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="seg" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Fach">
+    <Position X="15.75" Y="9" Width="2.5" />
+    <AssociationLine Name="kartons" Type="std::list&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17" Y="9" />
+        <Point X="17" Y="8.195" />
+        <Point X="13.562" Y="8.195" />
+        <Point X="13.562" Y="7.941" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAABAAAAAAAYgAAAAAAAgIIAAAAAAAAAQAA=</HashCode>
+      <FileName>Fach.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kartons" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Karton">
+    <Position X="7.5" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAIAAAAAACAACAAAAgAA=</HashCode>
+      <FileName>Karton.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fach" />
+      <Field Name="artikel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Lagermanager">
+    <Position X="4.5" Y="0.5" Width="3" />
+    <AssociationLine Name="segmente" Type="std::list&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.781" Y="3.401" />
+        <Point X="6.781" Y="6.789" />
+        <Point X="8.198" Y="6.789" Type="JumpStart" />
+        <Point X="8.365" Y="6.789" Type="JumpEnd" />
+        <Point X="10.445" Y="6.789" />
+        <Point X="10.445" Y="7.25" />
+        <Point X="12.438" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="wareneingaenge" Type="std::list&lt;_Ty, _Alloc&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.219" Y="3.401" />
+        <Point X="5.219" Y="8.316" />
+        <Point X="8.198" Y="8.316" Type="JumpStart" />
+        <Point X="8.365" Y="8.316" Type="JumpEnd" />
+        <Point X="12.562" Y="8.316" />
+        <Point X="12.562" Y="7.941" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AJAAAAAAAAAAAAAQACEACAAQEAAABAAAAIEAACAAAAA=</HashCode>
+      <FileName>Lagermanager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="artikel" />
+      <Field Name="segmente" />
+      <Field Name="wareneingaenge" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Segment">
+    <Position X="15.5" Y="2.25" Width="2" />
+    <AssociationLine Name="artikel" Type="Artikel" FixedFromPoint="true">
+      <Path>
+        <Point X="15.5" Y="3.875" />
+        <Point X="12.25" Y="3.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEgAAAABgAAQACEEAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Segment.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="artikel" />
+      <Field Name="faecher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Wareneingang">
+    <Position X="1.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAACBAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wareneingang.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kartons" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="std::list&lt;_Ty, _Alloc&gt;" Collapsed="true">
+    <Position X="12.25" Y="7.25" Width="1.5" />
+    <NestedTypes>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Unchecked_iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Mybase" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::const_reverse_iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::reference" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Unchecked_const_iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::const_iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::difference_type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::const_reference" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::size_type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::allocator_type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::const_pointer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::reverse_iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Nodeptr" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::pointer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::value_type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Alty" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="std::list&lt;_Ty, _Alloc&gt;::_Myt" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEgEEqECAHBEgEhEAKEIAgISFAwAKJIAoQEkAhAHQgo=</HashCode>
+      <FileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
